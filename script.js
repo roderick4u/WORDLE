@@ -5,7 +5,7 @@ const buttonReset = document.getElementById("reset-button");
 const buttonGiveUp = document.getElementById("give-up-button");
 
 let intentos = 6;
-let wordAPI = "APPLE"; 
+let wordAPI = "APPLE";
 let correctLetters = 0;
 
 buttonReset.addEventListener("click", () => {
@@ -30,12 +30,10 @@ function checkGuess() {
     let arrayWord = word.split('');
     let arrayDictionaryWord = wordAPI.split('');
 
-
     if (word.length !== 5) {
         alert("La palabra debe tener 5 letras");
         return;
     }
-
 
     for (let i = 0; i < arrayDictionaryWord.length; i++) {
         const letterContainer = document.createElement("div");
@@ -54,13 +52,12 @@ function checkGuess() {
         letterContainers.appendChild(letterContainer);
     }
 
-
     letterContainers.innerHTML += "<br>";
-
 
     intentos--;
 
     verification(correctLetters);
+}
 
 function verification(correctLetters) {
     if (correctLetters === 5) {
