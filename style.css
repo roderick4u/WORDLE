@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+     
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+     
+  #guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+     
+  #guess-button,
+  #reset-button,
+  #give-up-button {
+    display: inline-block; 
+    margin: 0 5px; 
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0c49ba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .letter-container {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 3px;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  .correct {
+    background-color: hsl(140, 100%, 50%);  /* Cambia el color cuando la letra es correcta */
+  }
+
+  .incorrect {
+    background-color: #ff8e8e;  /* Cambia el color cuando la letra es incorrecta */
+  }
+  .parcialCorrect{
+    background-color: #e4fd06;  /* Cambia el color cuando la letra es incorrecta */
+  } 
+  button:active {
+      transform: scale(0.95);
+
+  }
+     
+  .letter {
+      border: 1px solid black;
+      padding: 3px;
+      margin: 3px;
+      min-width: 20px;
+      text-align: center;
+      display: inline-block
+  }
+     
+  .row{
+      margin-bottom: 10px;
+  }
+     
+  .input-area{
+      margin: 30px;
+      text-align: center;
+  }
